@@ -1,0 +1,15 @@
+doctype html
+html(lang = "en")
+  head
+    meta(charset = "utf-8")
+    meta(http-equiv = 'X-UA-Compatible', content = ' IE=edge , chrome=1 ')
+    title Error Occured
+
+  body
+    h1 Oops !! Some error occured
+    p  Browser says - #{message}
+    p  Reason of error - #{status}
+    p
+       a(href='http://localhost:2000/v1/users/login/screen') Login
+    p
+       a(href='http://localhost:2000/v1/users/signup/screen') Signup

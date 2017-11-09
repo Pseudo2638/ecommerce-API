@@ -1,0 +1,33 @@
+doctype html
+html(lang = "en")
+  head
+    meta(charset = "utf-8")
+    meta(http-equiv = 'X-UA-Compatible', content = ' IE=edge , chrome=1 ')
+    title Signup Form
+
+  body
+    section.container
+       .signup
+
+           h1  Signup into the Web Application
+           form(method='POST', action='http://localhost:2000/v1/users/signup')
+             p
+               input(type='text', name='firstName', value='', placeholder='First Name')
+             p
+               input(type='text', name='lastName', value='', placeholder='Last Name')
+             p
+               input(type='text', name='password', value='', placeholder='Password')
+             p
+               input(type='text', name='email', value='', placeholder='Email ID')
+             p
+               input(type='text', name='primaryPhone', value='', placeholder='Primary Phone Number')
+             p
+               input(type='text', name='secondaryPhone', value='', placeholder='Secondary Phone Number')
+             p
+               input(type='text', name='securityQuestion', value='', placeholder='Set security question')
+             p
+               input(type='text', name='securityAnswer', value='', placeholder='Set security answer')
+             p
+               input(type='submit', name='', value='Signup')
+
+             p.submit

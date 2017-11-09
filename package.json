@@ -1,0 +1,19 @@
+{
+  "name" : "PseudoEcommerce",
+  "version" : "0.0.1",
+  "private" : "false",
+  "main" : "app.js",
+  "dependencies" :
+  {
+    "express":"latest",
+    "mongoose":"latest",
+    "body-parser":"latest",
+    "cookie-parser":"latest",
+    "morgan":"latest",
+    "path":"latest",
+    "express-session":"latest",
+    "jade":"latest",
+    "nodemailer":"latest",
+    "uniqid":"latest"
+  }
+}

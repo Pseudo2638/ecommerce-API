@@ -1,0 +1,21 @@
+doctype html
+html(lang = "en")
+  head
+    meta(charset = "utf-8")
+    meta(http-equiv = 'X-UA-Compatible', content = ' IE=edge , chrome=1 ')
+    title Delete Products
+
+  body
+    section.container
+       .signup
+
+           h1  Delete product
+           form(method='POST', action='http://localhost:2000/v1/products/delete')
+             p
+               Please enter the id below of the product you want to delete.
+             p
+               input(type='text', name='id', value='', placeholder='ID of product')
+             p
+               input(type='submit', name='', value='Delete Product')
+
+             p.submit
