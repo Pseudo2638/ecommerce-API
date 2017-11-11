@@ -3,17 +3,17 @@ html(lang = "en")
   head
     meta(charset = "utf-8")
     meta(http-equiv = 'X-UA-Compatible', content = ' IE=edge , chrome=1 ')
-    title Add Products to Cart
+    title Delete Products from User's Cart
 
   body
     section.container
        .signup
 
-           h1  Add Cart
+           h1  Delete From Cart
            form(method='POST', action='http://localhost:2000/v1/users/cart/remove')
              p
                input(type='text', name='productId', value='', placeholder='Product ID')
              p
-               input(type='submit', name='', value='ADD')
+               input(type='submit', name='', value='Delete')
 
              p.submit
