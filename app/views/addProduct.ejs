@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./parts/head.ejs %>
+  <style type="text/css">
+    body
+    {
+      margin: 0 !important;
+      padding:0 !important;
+    }
+
+    .login-box
+    {
+      padding: 5% !important;
+      margin-left:20% !important;
+      margin-right: 20% !important;
+      margin-top: 0 !important;
+    }
+
+    .input-block
+    {
+      margin: 5%;
+    }
+
+    form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+
+    button
+    {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 2%;
+      background-color: transparent;
+      border-radius: 12px;
+      border: 2px solid gray;
+    }
+    p
+    {
+      text-align : center;
+    }
+
+    .signupButton
+    {
+      text-decoration: none;
+    }
+
+
+
+  </style>
+</head>
+<body class="login-screen">
+  <main>
+  <div class="login-box">
+    <br>
+    <p><b>CREATE or ADD A PRODUCT</b></p>
+    <br> <hr>
+    <form class="login-form" action="http://localhost:2000/v1/products/create" method="post">
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productName" placeholder="Product Price" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productPrice" placeholder="Product Price" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productDescription" placeholder="Product Description" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="sellerName" placeholder="Seller Name" required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="number" name="sellerAddress" placeholder="Seller Address" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="number" name="sellerContactNumber" placeholder="Contact Number" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="sellerPinCode" placeholder=" Area PIN Code" autofocus required/>
+      </div>
+      <div class="input-block">
+        <input class="input-box" autocomplete="off" type="text" name="productCategory" placeholder="Mention Categories seperated by commas " autofocus required/>
+      </div> <br> <br>
+      <button type="submit" name="submit">Create</button><br>
+      
+    </form>
+    <p><a class="signupButton" href ="http://localhost:2000/v1/users/login/screen" ><b>Log in</b></a></p><br>
+    <p><a class="signupButton" href ="http://localhost:2000/v1/users/signup/screen" ><b>Signup</b></a></p><br>
+  </div>
+  </main>
+  <% include ./parts/footer.ejs %>
+</body>
+</html>

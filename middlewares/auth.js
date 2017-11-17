@@ -12,3 +12,16 @@ exports.checkLogin = function(req,res,next){
       next();
     }
 }
+
+exports.isLoggedIn = function(req,res,next){
+  // If Session does not exist //
+    if(req.session.user)
+    {
+      // Redirect ser to the login screen //
+      res.redirect('/v1/users/dashboard'); // WRITE LOGIN SCREEN HERE
+    }
+    else {
+      // Execute the next command //
+      next();
+    }
+}

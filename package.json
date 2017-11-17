@@ -12,7 +12,7 @@
     "morgan":"latest",
     "path":"latest",
     "express-session":"latest",
-    "jade":"latest",
+    "ejs":"latest",
     "nodemailer":"latest",
     "uniqid":"latest"
   }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./parts/head.ejs %>
+  <style type="text/css">
+    body
+    {
+      margin: 0 !important;
+      padding:0 !important;
+    }
+
+    .login-box
+    {
+      padding: 5% !important;
+      margin-left:20% !important;
+      margin-right: 20% !important;
+      margin-top: 0 !important;
+    }
+
+    .input-block
+    {
+      margin: 5%;
+    }
+
+    form div input
+    {
+      width: 100%;
+      margin: 0 !important;
+      padding: 2%;
+    }
+
+    button
+    {
+      width: 30%;
+      margin-left: 35%;
+      margin-right: 35%;
+      padding: 2%;
+      background-color: transparent;
+      border-radius: 12px;
+      border: 2px solid gray;
+    }
+    p
+    {
+      text-align : center;
+    }
+
+    .signupButton
+    {
+      text-decoration: none;
+    }
+
+
+
+  </style>
+</head>
+<body class="login-screen">
+  <main>
+  <div class="login-box">
+    <br>
+    <p><b> Welcome <%= user.firstName %> </b></p>
+    <br> <hr>
+    <p> Your Email ID is : <code> <%= user.email %>  </code></p>
+    
+    <p><a class="signupButton" href ="http://localhost:2000/v1/users/logout" ><b>Logout</b></a></p><br>
+    <p><a class="signupButton" href ="http://localhost:2000/v1/users/signup/screen" ><b>Signup</b></a></p><br>
+  </div>
+  </main>
+  <% include ./parts/footer.ejs %>
+</body>
+</html>
